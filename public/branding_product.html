@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ruang Cikgu Berhad</title>
+	<link rel="stylesheet" href="./css/tailwind.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
+	<link href="http://db.onlinewebfonts.com/c/0cc9115fb223b47a2f3a337345c7b1be?family=Freight+Big+Pro" rel="stylesheet" type="text/css"/>
+	<link href="http://db.onlinewebfonts.com/c/6cec834e2e8f2e4206567ed75e1281d4?family=Brandon+Grotesque" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Playfair+Display&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .grid li:nth-child(3) ~ li {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="font-family: Raleway;">
+	<!-- Header -->
+	<header id="header" style="display: block; font-family: Nunito Sans; background-color: transparent;" class="transition duration-500 font-bold text-xs md:pt-1 md:pb-3 uppercase fixed z-50 left-0 top-0 w-full text-center">
+		<div class="md:mx-14 mx-2 md:py-0 py-2 flex justify-between">
+			<div class="flex justify-start items-end md:w-1/3">
+				<a href="./index.html">
+					<h3 class="uppercase text-lg tracking-normal">
+						<!-- <span class="font-montserrat ">Ruang</span> -->
+						<span class="font-bold font-montserrat">
+							R<span class="text-orange-500">C</span>
+						</span>
+						<span>SME</span>
+					</h3>
+				</a>
+			</div>
+			<!-- <div class="hidden md:flex md:w-1/3">
+				<a href="./index.html" class="transition border-b border-gray-400 bg-gray-100 mx-3 mb-2 pt-4 hover:shadow-sm hover:bg-gray-100 cursor-pointer">
+					Utama
+				</a>
+				<a href="./branding.html" class="transition hover:border-b border-gray-400 bg-gray mx-3 mb-2 pt-4 hover:shadow-sm hover:bg-gray-100 cursor-pointer">
+					Hasil Kerja
+				</a>
+				<a class="transition hover:border-b border-gray-400 bg-gray mx-3 mb-2 pt-4 hover:shadow-sm hover:bg-gray-100 cursor-pointer">
+					Pakej
+				</a>
+			</div> -->
+			<div class="md:hidden flex">			
+				<button onclick="navBar()">
+					<svg height="28" viewBox="0 -53 384 384" width="28" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>					
+				</button>
+			</div>
+			<div class="hidden md:flex justify-end">
+				<a href="./index.html" class="transition hover:border-b border-gray-400 mx-3 mb-2 pt-4 hover:shadow-sm cursor-pointer">
+					Utama
+				</a>
+				<a href="./branding.html" class="transition hover:border-b border-gray-400 bg-gray mx-3 mb-2 pt-4 hover:shadow-sm cursor-pointer">
+					Hasil Kerja
+				</a>
+				<a href="./package.html" class="transition hover:border-b border-gray-400 bg-gray mx-3 mb-2 pt-4 hover:shadow-sm cursor-pointer">
+					Pakej
+				</a>
+                <a href="./tentangkami.html" class="transition border-b border-gray-400 bg-gray mx-3 mb-2 pt-4 hover:shadow-sm cursor-pointer">
+					Tentang Kami
+				</a>
+				<a class="transition hover:border-b border-gray-400 mx-3 mb-2 pt-4 hover:shadow-sm cursor-pointer">
+					Masuk
+				</a>
+				<a class="transition hover:border-b border-gray-400 mx-3 mb-2 pt-4 hover:shadow-sm cursor-pointer">
+					Daftar
+				</a>
+				<!-- <input type="text" placeholder="Search" class="w-32 px-4 mx-2 my-6 rounded"/> -->
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<div class="fixed z-50 left-0 top-0 w-full" id="menu" style="display: none">
+		<div class="bg-gray-100 opacity-80 h-screen sm:w-1/2 w-1/6" onclick="navBar()">
+			
+		</div>
+		<div class="bg-gray-100 sm:w-1/2 w-5/6">
+			<div class="h-screen flex-row bg-gray-100 w-full">
+				<div class="h-1/2 divide-y divide-gray-300">
+					<div class="flex justify-end w-full px-4 py-2 bg-gray-100" onclick="navBar()">
+						<div class="cursor-pointer">
+							<svg height="28" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="28" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/></svg>
+						</div>
+					</div>
+					<div class="flex items-center w-full bg-gray-200">
+						<a href="./index.html" class="mx-1 p-3 w-full hover:rounded-sm hover:bg-gray-400 hover:shadow">
+							Utama
+						</a>
+					</div>
+					<div class="flex items-center w-full bg-gray-200">
+						<a href="./branding.html" class="mx-1 p-3 w-full hover:rounded-sm hover:bg-gray-400 hover:shadow">
+							Hasil Kerja
+						</a>
+					</div>
+					<div class="flex items-center w-full bg-gray-200">
+						<a href="./package.html" class="mx-1 p-3 w-full hover:rounded-sm hover:bg-gray-400 hover:shadow">
+							Pakej
+						</a>
+					</div>
+					<div class="flex items-center w-full bg-gray-200">
+						<a href="./tentangkami.html" class="mx-1 p-3 w-full hover:rounded-sm hover:bg-gray-400 hover:shadow">
+							Tentang Kami
+						</a>
+					</div>
+					<div class="flex items-center w-full bg-gray-200">
+						<a href="#" class="mx-1 p-3 w-full hover:rounded-sm hover:bg-gray-400 hover:shadow">
+							Masuk
+						</a>
+						<a href="#" class="mx-1 p-3 w-full bg-gray-200 hover:rounded-sm hover:bg-gray-400 hover:shadow">
+							Daftar
+						</a>
+					</div>
+					<div class="hidden items-center w-full">
+						<div class="flex p-3 w-full">
+							<input type="text" placeholder="Search" class="px-3 py-2 rounded w-5/6 mr-2"/>
+							<div class="bg-blue-alice w-1/6 rounded p-2">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 503.467 503.467" style="enable-background:new 0 0 503.467 503.467;" xml:space="preserve">
+								<g transform="translate(1 1)">
+									<path style="fill:#80D6FA;" d="M487.96,440.173c13.653,13.653,13.653,34.987,0,48.64s-34.987,13.653-48.64,0l-59.733-59.733
+										l0.853-0.853l46.933-47.787L487.96,440.173z"/>
+									<path style="fill:#ECF4F7;" d="M199.533,37.4c89.6,0,162.133,72.533,162.133,162.133s-72.533,162.133-162.133,162.133
+										S37.4,289.133,37.4,199.533S109.933,37.4,199.533,37.4"/>
+									<g>
+										<path style="fill:#AAB1BA;" d="M361.667,199.533c0-89.6-72.533-162.133-162.133-162.133S37.4,109.933,37.4,199.533
+											s72.533,162.133,162.133,162.133S361.667,289.133,361.667,199.533 M395.8,199.533c0,41.813-12.8,81.067-35.84,112.64
+											c-12.8,18.773-29.013,34.987-47.787,47.787c-31.573,22.187-70.827,35.84-112.64,35.84C91.16,395.8,3.267,307.907,3.267,199.534
+											S91.16,3.267,199.533,3.267C307.907,3.267,395.8,91.16,395.8,199.533"/>
+										<path style="fill:#AAB1BA;" d="M380.44,428.227l-67.413-67.413l-0.853-0.853c18.773-12.8,34.987-29.013,47.787-47.787h0.853
+											l67.413,67.413l0,0l-46.933,47.787L380.44,428.227z"/>
+									</g>
+								</g>
+								<path style="fill:#51565F;" d="M465.067,503.467c-10.24,0-19.627-4.267-27.307-11.093L337.067,390.827
+									c-1.707-1.707-1.707-4.267,0-5.973c1.707-1.707,4.267-1.707,5.973,0L443.733,486.4c5.973,5.973,12.8,8.533,21.333,8.533l0,0
+									c7.68,0,15.36-3.413,21.333-8.533c5.973-5.973,8.533-12.8,8.533-21.333c0-8.533-3.413-15.36-8.533-21.333l-57.173-57.173
+									l-21.333,21.333c-1.707,1.707-4.267,1.707-5.973,0c-1.707-1.707-1.707-4.267,0-5.973l23.893-23.893
+									c0.853-0.853,1.707-0.853,3.413-0.853l0,0c0.853,0,2.56,0.853,3.413,0.853l59.733,59.733c7.68,6.827,11.093,17.067,11.093,27.307
+									c0,10.24-4.267,19.627-11.093,27.307C484.693,499.2,475.307,503.467,465.067,503.467L465.067,503.467z M200.533,401.067
+									C89.6,401.067,0,311.467,0,200.533S89.6,0,200.533,0s200.533,89.6,200.533,200.533c0,41.813-12.8,80.213-34.133,111.787
+									l42.667,42.667c0.853,0.853,0.853,1.707,0.853,3.413s0,2.56-0.853,3.413c-1.707,1.707-4.267,1.707-5.973,0l-40.96-40.96
+									C325.12,368.64,266.24,401.067,200.533,401.067z M200.533,8.533c-105.813,0-192,86.187-192,192s86.187,192,192,192
+									s192-86.187,192-192S306.347,8.533,200.533,8.533z M200.533,366.933c-92.16,0-166.4-74.24-166.4-166.4s74.24-166.4,166.4-166.4
+									c92.16,0,166.4,74.24,166.4,166.4S292.693,366.933,200.533,366.933z M200.533,42.667c-87.04,0-157.867,70.827-157.867,157.867
+									S113.493,358.4,200.533,358.4S358.4,287.573,358.4,200.533S287.573,42.667,200.533,42.667z M277.333,196.267
+									c-0.853,0-2.56,0-3.413-0.853l-68.267-68.267c-0.853-0.853-0.853-1.707-0.853-3.413c0-1.707,0-2.56,0.853-3.413
+									c1.707-1.707,4.267-1.707,5.973,0l68.267,68.267c0.853,0.853,0.853,1.707,0.853,3.413s0,2.56-0.853,3.413
+									C279.04,196.267,278.187,196.267,277.333,196.267z M294.4,145.067c-0.853,0-2.56,0-3.413-0.853l-34.133-34.133
+									C256,109.227,256,108.373,256,106.667s0-2.56,0.853-3.413c1.707-1.707,4.267-1.707,5.973,0l34.133,34.133
+									c0.853,0.853,0.853,1.707,0.853,3.413s0,2.56-0.853,3.413C296.107,145.067,295.253,145.067,294.4,145.067z"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="h-1/2 flex items-end w-full">
+					<div class="bg-gray-800 text-white flex justify-center w-full p-5">
+						&copy; Hak Cipta Ruang Cikgu Berhad 2021
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Body -->
+    <!-- Big Picture -->
+	<div id="bg" class="md:block hidden md:h-screen bg-fixed bg-no-repeat bg-cover" style="background-image: url(./images/Photoshoot/rc_nai-81.jpg)">
+        <div class="absolute md:flex hidden justify-center items-center w-full h-2/3">
+            <a href="./index.html">
+                <h3 class="uppercase text-lg tracking-normal">
+                    <span class="font-bold ">Ruang</span>
+                    <span class="font-bold font-montserrat">
+                        <span class="text-orange-500">C</span>ikgu
+                    </span>
+                    <span class="font-bold ">Berhad</span>
+                </h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="md:hidden h-60 bg-fixed bg-no-repeat bg-contain" style="background-image: url(./images/rc_nai-81.jpg)">
+
+    </div>
+
+    <div class="w-full h-screen bg-white">
+
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="bg-gray-50 md:h-screen w-full text-center flex-row mt-24">
+        <div class="bg-gray-50 md:h-4/6 w-full flex justify-center">
+            <div class="grid md:grid-cols-3 grid-cols-1 justify-center items-center">
+                <div class="bg-gray-50 flex justify-center items-center md:p-10 pt-10 md:mx-0 mx-4 border-gray-400 md:border-r md:border-b-0 border-b h-full md:mt-10">
+                    <div class="flex-row">
+                        <div class="flex justify-center items-center">
+                            <div class="grid grid-cols-3 gap-4 items-center">
+                                <a href="#">
+                                    <img class="h-24 w-24 hover:bg-black">
+                                </a>
+                                <a href="#">
+                                    <img class="h-24 w-24 hover:bg-black">
+                                </a>
+                                <a href="#">
+                                    <img class="h-24 w-24 hover:bg-black">
+                                </a>
+                                <a href="#">
+                                    <img class="h-24 w-24 hover:bg-black">
+                                </a>
+                                <a href="#">
+                                    <img class="h-24 w-24 hover:bg-black">
+                                </a>
+                                <a href="#">
+                                    <img class="h-24 w-24 hover:bg-black">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="py-6">
+                            <i class="fa fa-instagram pr-2" style="
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            
+                            font-size: 20px;
+                            " aria-hidden="true"></i>
+                            <a href="https://instagram.com/rctvet?igshid=1lqzfp36fimsz" class="uppercase" style="font-size: 14px;">@RuangCikgu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 flex items-center md:p-10 md:mx-0 mx-4 border-gray-400 md:border-r md:border-b-0 border-b h-full md:mt-10">
+                    <div class="flex-row">
+                        <h1 class="text-2xl font-bold py-4">Langgan</h1>
+                        <p class="text-sm mb-2">
+                            Sertailah kami di buletin bulanan kami untuk menginspirasi kandungan segar, tip reka bentuk + perniagaan, dan tawaran eksklusif!
+                        </p>
+                        <div class="flex-row">
+                            <input class="bg-gray-50 px-8 py-2 my-2 border-black border-b text-center text-xs" type="text" name="name" placeholder="Nama">
+                            <input class="bg-gray-50 px-8 py-2 mb-2 border-black border-b text-center text-xs" type="email" name="email" placeholder="E-mel">
+                        </div>
+                        <!-- Lihat Content 1 -->
+                        <div class="p-8 flex justify-center items-center">
+                            <div class="flex-row">
+                                <div class="w-full flex justify-center">
+                                    <a href="./branding.html" class="flex justify-center items-center font-sans text-sm font-extralight text-white shadow uppercase bg-gray-800 mb-2 px-5 py-2 hover:shadow-none hover:bg-gray-900">
+                                        Sertai keluarga kami
+                                    </a>
+                                </div>
+								<p class="text-xs pt-6">
+									* Jangan risau, kami tidak akan menghantar spam ke peti masuk anda!
+								</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 py-10">
+                    <div class="flex-row justify-center items-center h-full text-sm font-montserrat">
+                        <div>
+                            <a href="Email: office@ruangcikgu.com" class="pb-2" style="font-size: 12px;">E-Mail: office@ruangcikgu.com</a>
+                        </div>
+                        <div class="flex justify-center my-2">
+                            <div class="border-b border-black w-4/12">
+                    
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Tel: +60322763055" class="pt-2">Telefon: +603 2276 3055</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-50 p-5 h-1/6 flex items-end">
+            <div class="flex-row">
+                <div class="text-xs container mx-auto">
+                    <p class="md:px-48">
+                        Creatif mengakui orang-orang yang berbahasa Dharawal yang merupakan Penjaga Tradisional tanah Sutherland Shire tempat kami berpusat. 
+                        Kami mengakui hubungan dan sumbangan mereka yang berterusan terhadap tanah, air dan komuniti, dan memberi penghormatan kepada para Penatua masa lalu, 
+                        masa kini dan yang baru muncul dan menyampaikan rasa hormat itu kepada orang-orang Orang Asli lain yang mengunjungi laman web ini. Selalu ada, akan selalu ada, tanah Orang Asli.
+                    </p>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <h1 class="text-sm">
+                        &copy; Hak Cipta Ruang Cikgu Berhad&nbsp;
+                    </h1>
+                    <h1 id="year">
+                        
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<!-- Javascript -->
+	<script>
+        var bgPosition = document.getElementById("bg");
+        window.addEventListener("scroll", bgScroll);
+
+        function bgScroll() {
+            // bgPosition.style.backgroundPosition = "center";
+            bgPosition.style.backgroundPositionY = +(window.pageYOffset/5)+"%";
+            // bgPosition.style.transform = "translate3d(0, " + window.pageYOffset + "px, 0)";
+        }
+
+		function navBar() {
+			var x = document.getElementById("menu");
+			if (x.style.display === "none") {
+				x.style.display = "flex";
+			} else {
+				x.style.display = "none";
+			}
+		}
+
+		//Get the header
+		var header = document.getElementById("header");
+
+		// When the user scrolls down 20px from the top of the document, show the header
+		window.onscroll = function() {checkScroll()};
+
+        // console.log(window.innerHeight);
+
+		window.onorientationchange = function() { 
+			var orientation = window.orientation; 
+			switch(orientation) { 
+				case 0:
+				case 90:
+				case -90: window.location.reload();
+				break;
+			}
+		};
+        
+		function checkScroll() {
+            if (window.innerHeight <= 500) {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    header.style.display = "none";
+                } else {
+                    header.style.display = "block";
+                }
+            }else{
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    header.style.backgroundColor = "#f3f4f6";
+                } else {
+                    header.style.backgroundColor = "transparent";
+                }
+            }
+		}
+		
+		var d = new Date();
+		var n = d.getFullYear();
+		document.getElementById("year").innerHTML = n;
+	</script>
+</body>
+</html>

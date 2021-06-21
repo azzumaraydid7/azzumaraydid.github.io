@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTHM</title>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-white">
+    <!-- Header-->
+    <header class="flex bg-white w-full md:h-20 h-16 fixed z-10">
+        <div class="flex w-full">
+            <div class="flex md:justify-center justify-start text-sm w-full">
+                <div class="md:hidden flex justify-center items-center px-4">
+                    <button class="z-10">
+                        Menu
+                    </button>
+                </div>
+                <div class="md:w-auto w-full flex justify-center items-center md:static absolute">
+                    <a href="#">
+                        <img src="https://ruangcikgu.com/img/landing/logo/LOGO-UTHM.png" class="flex object-contain md:h-24 h-16 md:py-6 py-4 md:pr-4">
+                    </a>
+                </div>
+            
+                <div class="md:flex hidden justify-center items-center">
+                    <div class="px-4 text-gray-500">
+                        Categories
+                    </div>
+                    <div class="relative mx-auto text-gray-500">
+                        <button type="submit" class="absolute left-4 top-0 mt-3">
+                            <svg class="text-gray-500 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+                                width="512px" height="512px">
+                                <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                        </button>
+                        <input class="border border-gray-300 bg-white h-10 px-10 pr-5 text-gray-500 placeholder-gray-500 rounded-full text-sm focus:outline-none" type="search" name="search" placeholder="Search for class">
+                    </div>
+                </div>
+                <div class="md:flex hidden justify-center items-center px-4">
+                    <select class="md:block hidden px-4 bg-white py-2 rounded text-gray-500 focus:outline-none" style="-webkit-appearance:none;">
+                        <option>
+                            UTHM for Business
+                        </option>
+                        <option>
+                            Teach on Business
+                        </option>
+                    </select>
+
+                </div>
+                <div class="md:flex hidden justify-center items-center px-2">
+                    <button class="h-4 w-4">
+                        <img src="https://ruangcikgu.com/img/landing/icon/shopping-cart.png">
+                    </button>
+                </div>
+                <div class="md:flex hidden justify-center items-center px-2">
+                    <a href="https://www.rctvet.com/login?type=student" class="px-5 py-2 mx-1 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                        Student
+                    </a>
+                    <button class="px-5 py-2 mx-1 border border-blue-uthm rounded bg-blue-uthm text-indigo-50 hover:text-indigo-900 hover:bg-blue-50 shadow hover:shadow-none transition">
+                        Lecturer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex bg-white w-full md:h-20 h-16">
+    </div>
+    <!-- Banner -->
+    <div class="md:h-screen h-96">
+        <div class="relative">
+            <img src="https://ruangcikgu.com/img/landing/Banner/uthm.jpg" class="absolute md:h-screen h-96 w-full object-cover">
+            <div class="absolute md:h-screen h-96 w-full hidden opacity-50 items-center bg-black">
+            </div>
+            <div class="absolute md:h-screen h-96 w-full hidden md:justify-start justify-center items-center md:px-24">
+                <div class="rounded-xl bg-white md:p-8 p-4">
+                    <div class="flex-row">
+                        <h1 class="text-indigo-900 md:text-6xl text-2xl" style="font-family: 'Nunito Sans', sans-serif;">
+                            UTHM<br>
+                            <span class="text-indigo-500">virtual university</span>
+                        </h1>
+                        <h1 class="my-4">
+                            Study anytime,<span>anywhere</span><br>
+                            24/7 access to the best digital resources
+                        </h1>
+                        <button class="text-sm px-4 py-2 my-4 border border-indigo-900 rounded-full shadow bg-indigo-900 hover:bg-transparent transition text-indigo-50 hover:text-indigo-900">
+                            Areas of Study
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="container mx-auto">
+        <div class="flex-row bg-white lg:mx-8 pb-10">
+            <div class="flex justify-center">
+                <div class="flex-row my-20">
+                    <div class="py-4">
+                        <div class="flex justify-center">
+                            <h1 class="text-2xl font-semibold pt-8">The World's Largest selection of the courses</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <p>Choose from 155,000 online video courses with new additions published every month</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center">
+                            <h1 class="text-2xl font-semibold pt-8">Expand your career opportunity with UTHM</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <p>Whether you work in machine learning or finance, or are pursuing a career in web development or data scince</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="px-5 py-2 my-8 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Explore Course
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Row -->
+            <div class="flex w-full">
+
+                <!-- Card 1 -->
+                <div class="flex-row w-1/3">
+                    <div class="rounded-lg pr-4">
+                        <a href="https://ruangcikgu.com/lesson_view?course=74">
+                            <img class="h-52 w-full object-cover hover:border-indigo-100 border border-indigo-50 transition" src="https://cdn.domestika.org/c_fill,dpr_1.0,f_auto,h_258,pg_1,t_base_params,w_459/v1569245645/course-covers/000/000/227/227-original.jpg">
+                        </a>
+                    </div>
+                    <div class="text-xs pt-4 pb-1">
+                        by <span class="font-bold">Prof. Marzuki</span>
+                    </div>
+                    <div class="text-xl font-bold">
+                        Web Design
+                    </div>
+                    <div class="flex-row text-sm">
+                        <div class="flex pt-2">
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        From
+                                    </div>
+                                    <div>
+                                        13th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        To
+                                    </div>
+                                    <div>
+                                        14th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-full">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/pin.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        Location
+                                    </div>
+                                    <div>
+                                        Kuala Lumpur, Malaysia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-bold text-2xl mt-1">
+                        RM 99.00
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Bestseller
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 1 -->
+
+                <!-- Card 2 -->
+                <div class="flex-row w-1/3">
+                    <div class="rounded-lg pr-4">
+                        <a href="https://ruangcikgu.com/lesson_view?course=74">
+                            <img class="h-52 w-full object-cover hover:border-indigo-100 border border-indigo-50 transition" src="https://img-c.udemycdn.com/course/480x270/2301254_26c8_4.jpg?Expires=1623360588&Signature=Xx70C7z4n1iyho5E4AKzEo2rdLavtlucCWZlXdM-12H-Jari4ge0C-rDq7WNdRmq9a2CAaDg8dQiH5YrTMwsqfeoJCajKLvKQIdtUdStty7b505nAU-TzgROmMKDrsrDMfKzVGqZBLAeuicRVtiUyCAjfCYJCOP-Rf3Qp1K9QmM50uh~22YB4OC0s4ORARmN29G6OGW6bR1Uble7QbYy5-JJf7OBMA3vWDrcCGOGmrTj9FWBI-WeG0UZJSN4pU0ghG0QeFOqHN9wFdB9L4MTzSs~3d6plPEzkKtXfYJOodFf8xTgUmYJuMjk8NBiK5ASg~vp6DrxRFIgA3gzvo1Yvw__&Key-Pair-Id=APKAITJV77WS5ZT7262A">
+                        </a>
+                    </div>
+                    <div class="text-xs pt-4 pb-1">
+                        by <span class="font-bold">Prof. Marzuki</span>
+                    </div>
+                    <div class="text-xl font-bold">
+                        Web Design
+                    </div>
+                    <div class="flex-row text-sm">
+                        <div class="flex pt-2">
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        From
+                                    </div>
+                                    <div>
+                                        13th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        To
+                                    </div>
+                                    <div>
+                                        14th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-full">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/pin.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        Location
+                                    </div>
+                                    <div>
+                                        Kuala Lumpur, Malaysia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-bold text-2xl mt-1">
+                        RM 99.00
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Bestseller
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="flex-row w-1/3">
+                    <div class="rounded-lg pr-4">
+                        <a href="https://ruangcikgu.com/lesson_view?course=74">
+                            <img class="h-52 w-full object-cover hover:border-indigo-100 border border-indigo-50 transition" src="https://img-c.udemycdn.com/course/480x270/2121018_9de5_5.jpg?Expires=1623361962&Signature=KwDwN69bBGC0H7C1TtS-DZh5tLEXFmBCed4gMkZr4kogJWF~GJu2fqYnc7lFEGA7iZv4477vsbQi3-EiBOq8RNiKLP-wFfbmgcCZLt6WugVTAVaooENiqsqAe4gqLiNzmmEkE2UkDR58ZkVqOsmaM4BR9eKeZIzAoyH7rXMa7-GDfnbA3O06Mo3KUNL5eje9b9tJsWO0pAuqShWm2ja8QU1c1cyZrjqlF8KvF-GdcutEYO2i2rvy8Fjp1VY4H3hZDqgM6bhKOciaL4FKKOIjDtXzcgQpdU9Oaic44N6tAknxXGZwyE-yXgUYxiDHZwUFwLYOFPVRBT3HyJgfxnURvQ__&Key-Pair-Id=APKAITJV77WS5ZT7262A">
+                        </a>
+                    </div>
+                    <div class="text-xs pt-4 pb-1">
+                        by <span class="font-bold">Prof. Marzuki</span>
+                    </div>
+                    <div class="text-xl font-bold">
+                        Web Design
+                    </div>
+                    <div class="flex-row text-sm">
+                        <div class="flex pt-2">
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        From
+                                    </div>
+                                    <div>
+                                        13th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        To
+                                    </div>
+                                    <div>
+                                        14th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-full">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/pin.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        Location
+                                    </div>
+                                    <div>
+                                        Kuala Lumpur, Malaysia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-bold text-2xl mt-1">
+                        RM 99.00
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Bestseller
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 3 -->
+
+            </div>
+            <!-- End Card Row -->
+
+        </div>
+    </div>
+    <div>
+        <!-- Information -->
+        <div class="flex justify-center bg-gray-200">
+            <div class="flex-row">
+                <div class="flex justify-center pt-24">
+                    <h1 class="text-5xl font-semibold">
+                        <!-- Features -->
+                    </h1>
+                </div>
+                <div class="flex justify-center w-full pb-24 bg-gray-200">
+                    <div class="grid md:grid-cols-3 grid-cols-1">
+                        <div class="flex-row text-center">
+                            <div class="flex-row px-20">
+                                <div class="flex justify-center">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/course.png" class="w-24 h-24" style="width:50px; height: 50px;">
+                                </div>
+                                <p class="font-semibold py-4 md:text-2xl text-xl">
+                                    Profesional Course
+                                </p>
+                                <p class="">
+                                    See why leading organizations choose UTHM for Business as their destination for employee learning
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-row text-center">
+                            <div class="flex-row px-20">
+                                <div class="flex justify-center">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/professor.png" class="w-24 h-24" style="width:50px; height: 50px;">
+                                </div>
+                                <p class="font-semibold py-4 md:text-2xl text-xl">
+                                    Expert Professor
+                                </p>
+                                <p class="">
+                                    See why leading organizations choose UTHM for Business as their destination for employee learning
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-row text-center">
+                            <div class="flex-row px-20">
+                                <div class="flex justify-center">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/certificate.png" class="w-24 h-24" style="width:50px; height: 50px;">
+                                </div>
+                                <p class="font-semibold py-4 md:text-2xl text-xl">
+                                    Trusted Certification
+                                </p>
+                                <p class="">
+                                    See why leading organizations choose UTHM for Business as their destination for employee learning
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <!-- End Information -->
+
+        <!-- 2 -->
+        <div class="flex-row bg-white lg:mx-8 pb-10">
+            <div class="flex-row my-8">
+                <div>
+                    <h1 class="text-4xl font-semibold pt-8">Student Are Viewing</h1>
+                </div>
+            </div>
+
+            <!-- Card Row -->
+            <div class="flex w-full">
+
+                <!-- Card 1 -->
+                <div class="flex-row w-1/3">
+                    <div class="rounded-lg pr-4">
+                        <a href="https://ruangcikgu.com/lesson_view?course=74">
+                            <img class="h-52 w-full object-cover hover:border-indigo-100 border border-indigo-50 transition" src="https://cdn.domestika.org/c_fill,dpr_1.0,f_auto,h_258,pg_1,t_base_params,w_459/v1569245645/course-covers/000/000/227/227-original.jpg">
+                        </a>
+                    </div>
+                    <div class="text-xs pt-4 pb-1">
+                        by <span class="font-bold">Prof. Marzuki</span>
+                    </div>
+                    <div class="text-xl font-bold">
+                        Web Design
+                    </div>
+                    <div class="flex-row text-sm">
+                        <div class="flex pt-2">
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        From
+                                    </div>
+                                    <div>
+                                        13th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        To
+                                    </div>
+                                    <div>
+                                        14th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-full">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/pin.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        Location
+                                    </div>
+                                    <div>
+                                        Kuala Lumpur, Malaysia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-bold text-2xl mt-1">
+                        RM 99.00
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Bestseller
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 1 -->
+
+                <!-- Card 2 -->
+                <div class="flex-row w-1/3">
+                    <div class="rounded-lg pr-4">
+                        <a href="https://ruangcikgu.com/lesson_view?course=74">
+                            <img class="h-52 w-full object-cover hover:border-indigo-100 border border-indigo-50 transition" src="https://img-c.udemycdn.com/course/480x270/2301254_26c8_4.jpg?Expires=1623360588&Signature=Xx70C7z4n1iyho5E4AKzEo2rdLavtlucCWZlXdM-12H-Jari4ge0C-rDq7WNdRmq9a2CAaDg8dQiH5YrTMwsqfeoJCajKLvKQIdtUdStty7b505nAU-TzgROmMKDrsrDMfKzVGqZBLAeuicRVtiUyCAjfCYJCOP-Rf3Qp1K9QmM50uh~22YB4OC0s4ORARmN29G6OGW6bR1Uble7QbYy5-JJf7OBMA3vWDrcCGOGmrTj9FWBI-WeG0UZJSN4pU0ghG0QeFOqHN9wFdB9L4MTzSs~3d6plPEzkKtXfYJOodFf8xTgUmYJuMjk8NBiK5ASg~vp6DrxRFIgA3gzvo1Yvw__&Key-Pair-Id=APKAITJV77WS5ZT7262A">
+                        </a>
+                    </div>
+                    <div class="text-xs pt-4 pb-1">
+                        by <span class="font-bold">Prof. Marzuki</span>
+                    </div>
+                    <div class="text-xl font-bold">
+                        Web Design
+                    </div>
+                    <div class="flex-row text-sm">
+                        <div class="flex pt-2">
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        From
+                                    </div>
+                                    <div>
+                                        13th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        To
+                                    </div>
+                                    <div>
+                                        14th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-full">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/pin.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        Location
+                                    </div>
+                                    <div>
+                                        Kuala Lumpur, Malaysia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-bold text-2xl mt-1">
+                        RM 99.00
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Bestseller
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="flex-row w-1/3">
+                    <div class="rounded-lg pr-4">
+                        <a href="https://ruangcikgu.com/lesson_view?course=74">
+                            <img class="h-52 w-full object-cover hover:border-indigo-100 border border-indigo-50 transition" src="https://img-c.udemycdn.com/course/480x270/2121018_9de5_5.jpg?Expires=1623361962&Signature=KwDwN69bBGC0H7C1TtS-DZh5tLEXFmBCed4gMkZr4kogJWF~GJu2fqYnc7lFEGA7iZv4477vsbQi3-EiBOq8RNiKLP-wFfbmgcCZLt6WugVTAVaooENiqsqAe4gqLiNzmmEkE2UkDR58ZkVqOsmaM4BR9eKeZIzAoyH7rXMa7-GDfnbA3O06Mo3KUNL5eje9b9tJsWO0pAuqShWm2ja8QU1c1cyZrjqlF8KvF-GdcutEYO2i2rvy8Fjp1VY4H3hZDqgM6bhKOciaL4FKKOIjDtXzcgQpdU9Oaic44N6tAknxXGZwyE-yXgUYxiDHZwUFwLYOFPVRBT3HyJgfxnURvQ__&Key-Pair-Id=APKAITJV77WS5ZT7262A">
+                        </a>
+                    </div>
+                    <div class="text-xs pt-4 pb-1">
+                        by <span class="font-bold">Prof. Marzuki</span>
+                    </div>
+                    <div class="text-xl font-bold">
+                        Web Design
+                    </div>
+                    <div class="flex-row text-sm">
+                        <div class="flex pt-2">
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        From
+                                    </div>
+                                    <div>
+                                        13th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-1/2">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/calendar.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        To
+                                    </div>
+                                    <div>
+                                        14th Jan 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-full">
+                                <div class="py-2 pr-3">
+                                    <img src="https://ruangcikgu.com/img/landing/icon/pin.png" class="h-5 w-5 object-cover">
+                                </div>
+                                <div class="flex-row">
+                                    <div class="text-xs text-gray-500">
+                                        Location
+                                    </div>
+                                    <div>
+                                        Kuala Lumpur, Malaysia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex font-bold text-2xl mt-1">
+                        RM 99.00
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-blue-uthm rounded hover:bg-indigo-50 text-indigo-900 shadow hover:shadow-none transition">
+                            Bestseller
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 3 -->
+
+            </div>
+            <!-- End Card Row -->
+
+        </div>
+
+        <!-- Categories -->
+        <div class="flex-row bg-white lg:mx-8 pb-10">
+            <div class="flex-row my-8">
+                <div>
+                    <h1 class="text-4xl font-semibold pt-8">Top Categories</h1>
+                </div>
+            </div>
+
+            <!-- Box Row -->
+            <div class="flex justify-between w-full">
+                <!-- Box 1 -->
+                <div class="flex-row pr-4">
+                    <div class="border">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design.jpg" class="h-60 w-60 object-cover">
+                    </div>
+                    <div class="py-2 font-semibold">
+                        Design
+                    </div>
+                </div>
+                <!-- End Box 1 -->
+
+                <!-- Box 2 -->
+                <div class="flex-row pr-4">
+                    <div class="border">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" class="h-60 w-60 object-cover">
+                    </div>
+                    <div class="py-2 font-semibold">
+                        Development
+                    </div>
+                </div>
+                <!-- End Box 2 -->
+
+                <!-- Box 3 -->
+                <div class="flex-row pr-4">
+                    <div class="border">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing.jpg" class="h-60 w-60 object-cover">
+                    </div>
+                    <div class="py-2 font-semibold">
+                        Marketing
+                    </div>
+                </div>
+                <!-- End Box 3 -->
+
+                <!-- Box 4 -->
+                <div class="flex-row">
+                    <div class="border">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software.jpg" class="h-60 w-60 object-cover">
+                    </div>
+                    <div class="py-2 font-semibold">
+                        IT and Software
+                    </div>
+                </div>
+                <!-- End Box 4 -->
+            </div>
+            <!-- End Box ROw -->
+        </div>
+        <!-- End Categories -->
+    </div>
+    <div>
+        <!-- Business -->
+        <div class="flex items-center relative w-full py-24">
+            <div class="flex items-center bg-gray-200 text-gray-900 h-72 w-full">
+                <div class="flex-row px-24">
+                    <div class="text-4xl font-semibold">
+                        UTHM for Business
+                    </div>
+                    <div>
+                        Get Unlimited access
+                    </div>
+                    <div class="flex">
+                        <button class="px-5 py-2 my-2 border border-gray-900 rounded bg-gray-900 hover:bg-white text-gray-50 hover:text-gray-900 shadow hover:shadow-none transition">
+                            Get UTHM for Business
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute border right-28">
+                <img src="https://s.udemycdn.com/home/non-student-cta/udlite-lohp-promo-ufb.jpg" class="h-96 w-96 object-cover">
+            </div>
+        </div>
+
+    </div>
+    <!-- End Body -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-4 w-full flex justify-start items-center">
+        <div class="bg-white h-20 rounded-r-3xl w-1/3 flex justify-center">
+            <img src="https://ruangcikgu.com/img/landing/logo/LOGO-UTHM.png" class="flex object-contain md:h-20 h-16 py-4">
+        </div>
+        <div class="flex justify-end px-10 pr-28 items-center w-full h-20 text-right text-white">
+            © 2021 UTHM
+        </div>
+    </footer>
+</body>
+</html>
